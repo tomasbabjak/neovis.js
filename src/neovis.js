@@ -117,7 +117,7 @@ export default class NeoVis {
 	 */
 	async buildNodeVisObject(neo4jNode) {
 		let node = {};
-		let label = neo4jNode.labels[0];
+		let label = neo4jNode.labels[1];
 
 		let labelConfig = this._config && this._config.labels && (this._config.labels[label] || this._config.labels[NEOVIS_DEFAULT_CONFIG]);
 
